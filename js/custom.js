@@ -13,52 +13,7 @@
               $(this).find('.accordion-toggle').not($target).removeClass('active');
     });
 	  
-// DM Top
-(function($) {
- "use strict";
-	jQuery(window).scroll(function(){
-		if (jQuery(this).scrollTop() > 1) {
-			jQuery('.dmtop').css({bottom:"25px"});
-		} else {
-			jQuery('.dmtop').css({bottom:"-100px"});
-		}
-	});
-	jQuery('.dmtop').click(function(){
-		jQuery('html, body').animate({scrollTop: '0px'}, 800);
-		return false;
-	});
 
-// DM Menu
-	jQuery('#nav').affix({
-		offset: { top: $('#nav').offset().top }
-	});
-
-// Menu
-	$(".panel a").click(function(e){
-		// e.preventDefault(); --- stopping a tags on thecourse.php to be clickable
-		var style = $(this).attr("class");
-		$(".jetmenu").removeAttr("class").addClass("jetmenu").addClass(style);
-	});
-	$().jetmenu();
-
-// Facts
-	function count($this){
-			var current = parseInt($this.html(), 10);
-			current = current + 1; /* Where 50 is increment */
-		
-			$this.html(++current);
-			if(current > $this.data('count')){
-				$this.html($this.data('count'));
-			} else {    
-				setTimeout(function(){count($this)}, 50);
-			}
-		}        
-		
-		$(".stat-count").each(function() {
-		  $(this).data('count', parseInt($(this).html(), 10));
-		  $(this).html('0');
-		  count($(this));
-	});
 		
 // Tooltip
 	$('.social_buttons, .client').tooltip({
@@ -66,14 +21,6 @@
 	})
 	
 	$('.social_buttons, .client').tooltip()
-	
-// prettyPhoto
-	jQuery(document).ready(function(){
-		jQuery('a[data-gal]').each(function() {
-			jQuery(this).attr('rel', jQuery(this).data('gal'));
-		});  	
-		jQuery("a[data-rel^='prettyPhoto']").prettyPhoto({animationSpeed:'slow',theme:'light_square',slideshow:false,overlay_gallery: false,social_tools:false,deeplinking:false});
-	}); 
 
 // Hover and Carousel
 	$('.owl-carousel > .item ').each( function() { $(this).hoverdir(); } );
@@ -91,12 +38,9 @@
 	$("[data-toggle=tooltip]").tooltip();
 
 // popover demo
-	$("[data-toggle=popover]")
-	.popover()
+	$("[data-toggle=popover]").popover()
 
 
-		
-})(jQuery);
 
 $(window).resize(function() {
   if( $(window).width() <= 768 ) {
@@ -126,6 +70,10 @@ function getUrl() {
 	} else if ( url.indexOf('course') > -1 ) {
 		
 		$('a[href="thecourse.php"]').parent().addClass('active');
+
+	}else if ( url.indexOf('success') > -1 ) {
+		
+		$('a[href="success.php"]').parent().addClass('active');
 
 	} else if ( url.indexOf('tuition') > -1 ) {
 		
@@ -157,3 +105,8 @@ function testHeight() {
 	}
 }
 testHeight();
+$(document).ready(function() {	
+ 		setTimeout(function(){
+	        $('body').addClass('loaded');
+	    }, 1500); 
+});
