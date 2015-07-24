@@ -34,6 +34,9 @@
     <!--[if lt IE 9]>
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+    
+  <script src="assets/js/jquery.js"></script>
+    <script src="js/jetmenu.js"></script> 
     <script src="js/phone.js"></script>
     <script src="js/modernizr.js"></script>
     <!-- KISSmetrics tracking snippet -->

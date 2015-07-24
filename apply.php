@@ -1,8 +1,9 @@
 <?php  include('head.php');  ?> 
   
 <body>
-  <?php  include('header.php');  ?> 
+  
   <?php  include('social.php');  ?> 
+  <?php  include('header.php');  ?> 
 
   <div class="jumbotron jumbotron-sm">
     <div class="container">
@@ -49,17 +50,15 @@
       </div>
 
       <!-- CITY -->
-      <div class="row">
+      <!-- <div class="row">
           <h2>Which city would you like to attend?</h2>
           <input type="radio" name="City" value="Manhattan Class"> Manhattan - 25 Broadway, New York, NY 10004
           <br>
           <input type="radio" name="City" value="San Francisco Class"> San Francisco - 156 2nd Street, San Francisco, CA 94105
-          <br>
-          <input type="radio" name="City" value="San Diego Class"> San Diego - Coming Soon
-      </div>
+      </div> -->
 
       <!-- Application Questions -->
-      <div class="row">
+      <div class="row"> 
         <h2> Application Questions</h2>
         <label>Why are you applying to Codify Academy?</label>
         <textarea name="Why Apply?" class="formfield1 form-control"></textarea>

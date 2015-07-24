@@ -9,6 +9,7 @@
                     <ul class="menu">
                         <li><a href="index.php">Home</a></li>
                         <li><a href="thecourse.php">The Course</a></li>
+                        <li><a href="success.php">Success Stories</a></li>
                         <li><a href="tuition.php">Tuition</a></li>
                         <li><a href="apply.php">Apply</a></li>
                         <li><a href="faq.php">Faq</a></li>
@@ -21,13 +22,12 @@
 </footer
 
   <!-- Main Scripts-->
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+  
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/jquery.unveilEffects.js"></script> 
 <script src="js/retina-1.1.0.js"></script>
 <script src="js/jquery.hoverdir.js"></script>
-  <script src="js/owl.carousel.js"></script>  
-  <script src="js/jetmenu.js"></script> 
+  <script src="js/owl.carousel.js"></script> 
 <script src="js/jquery.hoverex.min.js"></script>
 <script src="js/jquery.prettyPhoto.js"></script>
 <script src="js/custom.js"></script>
@@ -67,9 +67,8 @@
     window._fbq = window._fbq || [];
     window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
+<script src="js/phone.js"></script>
+    <script src="js/modernizr.js"></script>
 <noscript>
     <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=313066122236538&amp;ev=PixelInitialized" />
 </noscript>
-
-
-</footer><!-- end footer -->

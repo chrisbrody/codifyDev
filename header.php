@@ -1,7 +1,7 @@
 <header class="header">
   <div class="container">
     <div class="site-header clearfix">
-      <div class="col-lg-12 col-md-12 col-sm-12">                  
+      <div class="col-lg-12">                  
         <div id="nav" class="right">
           <div class="site-title nav-left" id="title">
             <a href="index.php" id="logo">
@@ -16,6 +16,9 @@
               </li>
               <li>
                 <a href="thecourse.php">The Course</a> 
+              </li>
+              <li>
+                <a href="success.php">Success Stories</a>
               </li>
               <li>
                 <a href="tuition.php">Tuition</a>

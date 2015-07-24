@@ -67,10 +67,6 @@
                 <a href="tel:9258763287"><i class="fa fa-phone"></i> (925) 876-3287</a>
             </address>
             <address>
-                San Diego, CA <br>
-                <a href="tel:9258763287"><i class="fa fa-phone"></i> (925) 876-3287</a>
-            </address>
-            <address>
                 <strong>Admissions</strong><br>
                 <a href="mailto:admissions@codifyacademy.com">admissions@codifyacademy.com</a>
             </address>    

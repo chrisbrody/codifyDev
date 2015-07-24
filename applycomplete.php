@@ -1,93 +1,87 @@
 <?php  include('head.php');  ?> 
   
 <body>
-<?php  include('header.php');  ?> 
+  
+  <?php  include('social.php');  ?> 
+  <?php  include('header.php');  ?> 
 
-<div class="container">
-  <div class="row text-center">
-    <div class="applied rowwidth">
-      <br>
-      <h1>Application Submitted!</h1>
-      <br>
-      <img src="demos/success.jpg">
-      <br>
-      <h3>Be Talking With You Shortly</h3>
-      <br>
+  <div class="jumbotron jumbotron-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="h1 h1course">APPLICATION SUBMITTED!</h1>
+            </div>
+        </div>
     </div>
   </div>
-</div>
 
- <div class="copyrights">
-        <div class="container">
-            <div class="col-lg-6 col-md-6 col-sm-12 columns">
-                <p>Copyright © <script>document.write(new Date().getFullYear());</script> - All rights reserved <a title="Codify Academy" href="http://codifyacademy.com">Codify Academy</a></p>
-            </div><!-- end widget -->
-            <div class="col-lg-6 col-md-6 col-sm-12 columns text-right">
-                <div class="footer-menu right">
-                    <ul class="menu">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="thecourse.php">The Course</a></li>
-                        <li><a href="tuition.php">Tuition</a></li>
-                        <li><a href="apply.php">Apply</a></li>
-                        <li><a href="faq.php">Faq</a></li>
-                        <li><a href="contact.php">Contact</a></li>
-                    </ul>
-                </div>
-            </div><!-- end large-6 -->   
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
-  <!-- Google Code for Application Submission Conversion Page -->
-  <script type="text/javascript">
-    /* <![CDATA[ */
-    var google_conversion_id = 909855431;
-    var google_conversion_language = "en";
-    var google_conversion_format = "2";
-    var google_conversion_color = "ffffff";
-    var google_conversion_label = "2XPUCMnEoFkQx5XtsQM";
-    var google_remarketing_only = false;
-    /* ]]> */
-  </script>
-  <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
-  </script>
-  <noscript>
-    <div style="display:inline;">
-      <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/909855431/?label=2XPUCMnEoFkQx5XtsQM&amp;guid=ON&amp;script=0"/>
+  <!-- <div class=" row rowwidth">
+    <div class="col-lg-2 col-lg-offset-1">
+        <div class="circleimage">
+          <img src="demos/sam.jpg" class="img-circle" style="height:116px" "width:116px"/>
+        </div>
     </div>
-  </noscript>
-  <!-- Facebook Conversion Code for PE - Application Submission -->
-  <script>
-    (function() {
-      var _fbq = window._fbq || (window._fbq = []);
-      if (!_fbq.loaded) {
-        var fbds = document.createElement('script');
-        fbds.async = true;
-        fbds.src = '//connect.facebook.net/en_US/fbds.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(fbds, s);
-        _fbq.loaded = true;
-      }
-    })();
-    window._fbq = window._fbq || [];
-    window._fbq.push(['track', '6021810669217', {'value':'0.00','currency':'USD'}]);
-  </script>
-  <noscript>
-    <img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?ev=6021810669217&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1" />
-  </noscript>
-   <!-- Main Scripts-->
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/jquery.unveilEffects.js"></script> 
-<script src="js/retina-1.1.0.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-  <script src="js/owl.carousel.js"></script>  
-  <script src="js/jetmenu.js"></script> 
-<script src="js/jquery.hoverex.min.js"></script>
-<script src="js/jquery.prettyPhoto.js"></script>
-<script src="js/custom.js"></script>
-<!-- LayerSlider script files -->
-<script src="layerslider/js/greensock.js" type="text/javascript"></script>
-<script src="layerslider/js/layerslider.transitions.js" type="text/javascript"></script>
-<script src="layerslider/js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+    <div class="col-lg-9">
+      <h2>Questions about the process?<h2>
+      <h3>Give Sam a ring, <a href="tel:5185214189">(518) 521-4189</a></h3>
+    </div>
+  </div>
+  <br>
+  <hr> -->
+
+  <div class="container rowwidth">
+    <form accept-charset="UTF-8" action="https://formkeep.com/f/618ef2a75979" method="POST">
+      <div class="row">
+          <h4 style="font-weight:bold; font-style:italic;">Admissions for classes are done on a rolling basis, so the earlier you apply, the better.</h4>
+      </div>
+
+      <!-- Basic Info -->
+      <div class="row">
+          <h2>Basic Information</h2>
+          <label>*Full Name:</label>
+          <input required type="text" name="Full Name" class="formfield form-control">
+
+          <label>*Email:</label>
+          <input required type="email" name="Email" class="formfield form-control">
+          <br>
+
+          <label>*Phone Number:</label>
+          <input required type="text" name="Phone Number"class="formfield form-control">
+      </div>
+
+      <!-- CITY -->
+      <!-- <div class="row">
+          <h2>Which city would you like to attend?</h2>
+          <input type="radio" name="City" value="Manhattan Class"> Manhattan - 25 Broadway, New York, NY 10004
+          <br>
+          <input type="radio" name="City" value="San Francisco Class"> San Francisco - 156 2nd Street, San Francisco, CA 94105
+      </div> -->
+
+      <!-- Application Questions -->
+      <div class="row"> 
+        <h2> Application Questions</h2>
+        <label>Why are you applying to Codify Academy?</label>
+        <textarea name="Why Apply?" class="formfield1 form-control"></textarea>
+        <br>
+        <label>The ability to think in a structured way, both creatively and quantitatively, to solve complex problems is an important element of being a successful developer. Can you tell us anything that demonstrates your abilities in that realm? <br> (anything from standardized test scores to experience playing a musical instrument counts) *</label>
+        <textarea name="Student Ability" class="formfield1 form-control"></textarea>
+        <br>
+        <label>Do you have any previous coding experience? (Knowing your starting point will help us better craft your learning experience.)</label>
+        <textarea name="Previous Experience" class="formfield1 form-control"></textarea>
+        <br>
+        <label>Is there anything else you'd like us to know?</label>
+        <textarea name="Anything Else" class="formfield1 form-control"></textarea>
+      </div>
+
+
+      <div class="row">
+        <input type="hidden" name="utf8" value="✓">
+        <button class="button large" type="submit">Submit Application</button>
+      </div>
+    </form>
+  </div>
+ 
+  <?php include('footer.php');?>
 
 </body>
 </html>

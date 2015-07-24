@@ -635,19 +635,15 @@
 	.affix-top .site-title h4 {
 		font-weight: 900;
 		color: #2f2f2f;
-		position: fixed;
 		top: 45px;
 		z-index: 100;
-		transition: 1.0s all ease-in-out;
 	}
 	.affix .site-title h4 {
 		font-weight: 900;
 		color: #2f2f2f;
-		position: fixed;
 		top: 7px;
 		left: 15px;
 		z-index: 100;
-		transition: 1.0s all ease-in-out;
 	}
 		
 	.callus span {
@@ -745,6 +741,17 @@
 		z-index: 99;
 		background: rgba(255,255,255,0.9);
 		border-bottom: 1px solid #DCDBD7;
+	}
+	#nav.affix-top {
+		position: fixed;
+		top: -1px;
+		left: 0;
+		width: 100%;
+		margin-top:0;
+		z-index: 99;
+		background: rgba(255,255,255,0.9);
+		border-bottom: 1px solid #DCDBD7;
+		background: rgba(255,255,255,1);
 	}	
 	.slideshow-wrapper	{
 		background:#F5F5F5;
@@ -2319,6 +2326,15 @@
 		display:block !important;
 		text-align:center !important;
 	}
+
+	.site-header.clearfix {
+		padding-top:0px;
+	}
+
+	.container.clearfix.navbar-right {
+		display: inline-block;
+		float:right;
+	}
 }
 
 @media only screen and (min-width: 40.063em) {
@@ -2578,6 +2594,9 @@ h1.tuition {
 			.hero {
 				height: 200px;
 			}
+			img.studentimage {
+				width:30%;
+			}
 		}
 		@media (max-width: 768px) {
 			.headingcourse {
@@ -2736,7 +2755,24 @@ input.formfield.form-control.homepage {
 	text-align:center;
 }
 
+.site-title.nav-left#title {
+	display: inline-block;
+	float:left;
+	padding: 0 15px;
+}
 
+.section-grey .panel-body {
+      background-color: #fff;
+    }
+    .section-grey .panel-body ul {
+      color: black;
+    }
+    .section-grey h4.text-center {
+      font-size:36px;
+    }
+    .section-grey .panel-title a {
+      font-size: 20px;;
+    }
 
 
 
@@ -2772,3 +2808,410 @@ a[href="#financing"] {
 .copyrights {
 	transition: all 0.3s ease-in-out;
 }
+
+
+
+/*========================
+SUCCESS.PHP
+=========================*/
+
+body.successstories hr {
+	width:35%;
+	margin:0 auto;
+}
+
+.studentreviewleft {
+	margin:50px auto;
+	padding:0px;
+	width:90%;
+}
+
+.studentreviewright {
+	margin:50px auto;
+	padding:0px;
+	width:90%;
+}
+
+.studentreviewright h2 {
+	text-align:right;
+}
+
+.studentreviewright p {
+	text-align:right;
+}
+
+div.studentimage {
+	width:50%;
+	margin:0 auto;
+}
+
+img.student {
+    border-radius:100px;
+}
+
+.studentprofile h2 {
+	text-align:center;
+}
+
+.studentprofile h3 {
+	text-align:center;
+	font-size:20px;
+}
+
+.wherenow {
+	text-align:center;
+}
+
+.gradfacts {
+	text-align:center;
+	font-size:25px;
+	font-style:italic;
+}
+
+
+
+
+
+/*========================
+Responsive design
+=========================*/
+
+@media (max-width: 1050px) {
+	.jetmenu > li > a {
+		font-size:12px;
+	}
+}
+
+@media (min-width: 992px) {
+	.studentprofile h2 {
+		display: none;
+	}
+	.row.mininfo {
+		width:90%;
+		margin:0 auto;
+	}
+
+}
+
+@media (max-width: 992px) {
+	.studentreviewright h2 {
+		text-align:center;
+	}
+	.studentreviewright p {
+		text-align:center;
+	}
+	.studentreviewright .studtestimonial h2 {
+		display: none;
+	}
+	.textconsole {
+		display:none;
+	}
+}
+
+@media (min-width: 767px) {
+	.mobilefold {
+		display:none;
+	}
+	.wherenow {
+		display:none;
+	}
+	.beginners {
+		display:none;
+	}
+	.mobileform {
+		display: none;
+	}
+	.testimonialmobilehome {
+		display:none;
+	}
+	.responsiveshow {
+		display:none;
+	}
+}
+
+@media (max-width: 767px) {
+	#tuitionTab .tab-pane {
+		padding:10px 20px;
+	}
+	#tuitionTab {
+		margin:10px 0 30px;
+	}
+	.container.section-grey {
+		padding:0;
+	}
+	.panel-body {
+		padding:15px 30px;
+	}
+	.rowwidth {
+		width:90%;
+		margin-bottom:25px;
+	}
+	.contactfooter {
+		margin-bottom: 50px;
+	}
+	.jetmenu > li > a {
+		font-size:15px;
+	}
+	.slideshow-wrapper {
+		display:none;
+	}
+	.basicinfo {
+		display:none;
+	}
+	.morebasicinfo {
+		display:none;
+	}
+	.mobilefold {
+		display:block;
+	}
+	.beginners {
+		display:block;
+	}
+	.mobileform {
+		display: block;
+		text-align:center;
+		background-color: #E3E2E5;
+	}
+	.testimonialmobilehome {
+		display:block;
+		text-align:center;
+		margin-bottom:40px;
+		margin-top:30px;
+	}
+	.mobilebgtop {
+		display:block;
+		background-image: url("../img/mobilebgtop.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		height:500px;
+		background-size: 100%;
+	}
+	.centerbutton {
+		text-align:center;
+	}
+	.mobileapplytop {
+		width: 200px;
+		height: 70px;
+		font-size: 2.9rem;
+		top:250px;
+	}
+	.wherenow {
+		display:block;
+		margin-bottom:20px;
+		margin-top:20px;
+		margin-bottom:40px;
+	}
+	.wherenow h3 {
+		margin-bottom:20px;
+		text-decoration: underline;
+	}
+	.mobilebglogos {
+		display:block;
+		background-image: url("../img/logobg.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		height:540px;
+		background-size: 100%;
+	}
+
+	.successlinkdiv {
+		margin-top:25px;
+	}
+	.successlink {
+		color:#1a0dab;
+		font-size:20px;
+	}
+	.beginnerswelcome {
+		display:block;
+		background-image: url("../img/beginners.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		height:500px;
+		background-size: 100%;
+	}
+	.mobileapplybegin {
+		width: 200px;
+		height: 70px;
+		font-size: 2.7rem;
+		top:400px;
+	}
+	#homeform {
+		border:0px;
+		padding:50px 0 40px 0;
+	}
+	.testimonialmobilehome h3 {
+		margin:30px 0;
+		text-decoration: underline;
+	}
+	.testimonialmobilehome img {
+		border-radius:100px;
+	}
+
+	.nopadding {
+		padding:0px;
+	}
+	.row {
+		margin-right:0px;
+		margin-left:0px;
+	}
+	.meghome {
+		box-shadow: 1px 1px 4px #888888;
+		width:95%;
+		margin:0 auto;
+		padding:15px 5px;
+		margin-bottom:30px;
+	}
+	.section2 .message a.button.large {
+		display:none;
+	}
+	#basicinfo {
+		margin-bottom:40px;
+	}
+	header.header {
+		height:40px;
+	}
+	.button.large.ls-l.thirdp {
+		display: none;
+	}
+	.responsiveshow {
+		display:inline-block;
+	}
+
+}
+
+@media (max-width: 350px) {
+	.mobilebgtop {
+		height:400px;
+	}
+	.mobileapplytop {
+		top:200px;
+	}
+	.wherenow h3 {
+		margin-bottom:0px;
+	}
+	.successlinkdiv {
+		margin-top:0px;
+	}
+	.mobilebglogos {
+		height:480px;
+	}
+	.beginnerswelcome {
+		height:400px;
+	}
+	.mobileapplybegin {
+		top:310px;
+	}
+}
+
+@media (max-width: 767px) {
+	body.successstories hr {
+		width: 80%;
+	}
+	.studentreviewright.toptest {
+		margin-top:0;
+	}
+	.row.mininfo {
+		margin:0;
+		background-color: #1abc9c;
+	}
+	.gradfacts {
+		line-height:35px;
+		color:white;
+	}
+	.jumbotron-sm {
+		padding:24px 0;
+	}
+	.jumbotron h1 {
+		font-size:28px;
+	}
+	.copyrights p {
+		font-size:13px;
+	}
+	.copyrights .container .columns {
+		padding:0px;
+	}
+	.footer-menu li {
+		padding: 0 15px;
+		line-height: 18px;
+		font-size:15px;
+	}
+	h2.firstsuccess {
+		margin-top:0px;
+	}
+	#nav.affix {
+		background:rgba(255,255,255,1);
+	}
+	#tuitionTab .tab-content {
+		margin-bottom:35px;
+	}
+	#tuitionTab li {
+		  border-top: 1px solid #dddddd;
+	}
+	footer .copyrights .container .text-right {
+		display:none;
+	}
+	footer .copyrights .container .columns{
+		text-align: center;
+	}
+	footer .copyrights {
+		position: static;
+	}
+}
+
+@media (max-width: 378px) {
+	.container.clearfix.navbar-right {
+		padding:0px;
+	}
+	.copyrights p {
+		font-size:13px;
+	}
+	.copyrights .container .columns {
+		padding:0px;
+	}
+	.footer-menu li {
+		padding: 0 15px;
+		line-height: 18px;
+	}
+}
+
+@media (max-width: 321px) {
+	.copyrights p {
+		font-size:11px;
+	}
+	.footer-menu li {
+		padding: 0 15px;
+		line-height: 18px;
+		font-size:12px;
+	}
+	#logosize {
+		font-size:21px;
+	}
+}
+
+@media (max-width: 317px) {
+	#logosize {
+		font-size:22px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

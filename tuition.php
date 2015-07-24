@@ -1,8 +1,8 @@
-<?php  include('head.php');  ?> 
+  <?php  include('head.php');  ?> 
   
-	<body>  
-    	<!-- Header / Nav -->
-    	<?php  include('header.php');  ?> 
+<body class="successstories">  
+  <!-- Header / Nav -->
+  <?php  include('header.php');  ?> 
     	<section id="tuition">
 	    	<div class="jumbotron jumbotron-sm">
 			    <div class="container">
