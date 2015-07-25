@@ -7,7 +7,7 @@
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
  
-</div>  
+  </div>  
   <!-- social media link -->
   <?php  include('social.php');  ?> 
   <!-- Header / Nav -->
